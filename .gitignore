@@ -1,0 +1,11 @@
+backups
+data/
+dist/
+tmp/
+env*/
+etc/
+log
+.pgpass
+bin/.git/*
+bin/.gitignore
+bin/dist/*

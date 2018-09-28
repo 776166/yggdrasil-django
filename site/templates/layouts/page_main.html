@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}{% load staticfiles %}
+
+{% block page_whole_title %}{% block page_title %}Main page{% endblock page_title %} @ Yggdrasil{% endblock page_whole_title %}
+
+{% block "top_css" %}
+	{% if debug == True %}
+		<link media="all" rel="stylesheet/less" type="text/css" href="{% static 'css/src/main.less' %}?nocache">
+	{% else %}
+		<link rel="stylesheet" type="text/css" href="{% static 'css/main.{{ engine_version }}.min.css' %}">
+	{% endif %}
+{% endblock "top_css" %}
+
+{% block "content" %}
+Main Page
+{% endblock "content" %}
